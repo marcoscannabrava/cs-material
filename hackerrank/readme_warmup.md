@@ -1,7 +1,9 @@
-# Read
+# To-Read
 - [Know Your JS Data Structures](https://blog.logrocket.com/know-your-javascript-data-structures/)
 - [Eloquent JS - Data Structures](https://eloquentjavascript.net/04_data.html)
 - Ways to Iterate a JS Object
+
+## Warm-Up Exercises
 
 ### Socks Merchant
 
@@ -82,3 +84,99 @@ _/\      _
    \    /
     \/\/
 He enters and leaves one valley.
+
+
+### Jumping On The Clouds
+
+Emma is playing a new mobile game that starts with consecutively numbered clouds. Some of the clouds are thunderheads and others are cumulus. She can jump on any cumulus cloud having a number that is equal to the number of the current cloud plus  or . She must avoid the thunderheads. Determine the minimum number of jumps it will take Emma to jump from her starting postion to the last cloud. It is always possible to win the game.
+
+For each game, Emma will get an array of clouds numbered  if they are safe or  if they must be avoided. For example,  indexed from . The number on each cloud is its index in the list so she must avoid the clouds at indexes  and . She could follow the following two paths:  or . The first path takes  jumps while the second takes .
+
+Function Description
+
+Complete the jumpingOnClouds function in the editor below. It should return the minimum number of jumps required, as an integer.
+
+jumpingOnClouds has the following parameter(s):
+
+c: an array of binary integers
+Input Format
+
+The first line contains an integer , the total number of clouds. The second line contains  space-separated binary integers describing clouds  where .
+
+Constraints
+
+Output Format
+
+Print the minimum number of jumps needed to win the game.
+
+Sample Input 0
+
+7
+0 0 1 0 0 1 0
+Sample Output 0
+
+4
+Explanation 0:
+Emma must avoid  and . She can win the game with a minimum of  jumps:
+
+jump(2).png
+
+Sample Input 1
+
+6
+0 0 0 0 1 0
+Sample Output 1
+
+3
+Explanation 1:
+The only thundercloud to avoid is . Emma can win the game in  jumps:
+
+
+
+### Repeated String
+
+Lilah has a string, , of lowercase English letters that she repeated infinitely many times.
+
+Given an integer, , find and print the number of letter a's in the first  letters of Lilah's infinite string.
+
+For example, if the string  and , the substring we consider is , the first  characters of her infinite string. There are  occurrences of a in the substring.
+
+Function Description
+
+Complete the repeatedString function in the editor below. It should return an integer representing the number of occurrences of a in the prefix of length  in the infinitely repeating string.
+
+repeatedString has the following parameter(s):
+
+s: a string to repeat
+n: the number of characters to consider
+Input Format
+
+The first line contains a single string, .
+The second line contains an integer, .
+
+Constraints
+
+For  of the test cases, .
+Output Format
+
+Print a single integer denoting the number of letter a's in the first  letters of the infinite string created by repeating  infinitely many times.
+
+Sample Input 0
+
+aba
+10
+Sample Output 0
+
+7
+Explanation 0
+The first  letters of the infinite string are abaabaabaa. Because there are  a's, we print  on a new line.
+
+Sample Input 1
+
+a
+1000000000000
+Sample Output 1
+
+1000000000000
+Explanation 1
+Because all of the first  letters of the infinite string are a, we print  on a new line.
