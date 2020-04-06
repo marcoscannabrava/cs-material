@@ -1,0 +1,54 @@
+
+<script>
+document.querySelector("h1.ce-element.ce-element--type-text").innerHTML("") = 
+`
+<img style="height: 100px;" src="https://res.cloudinary.com/mpc-cloud/image/upload/v1586197809/MIT%20Mindfulness/M_L_BrandonGrotesque_Blue_r13gea.png" />
+`
+</script>
+
+
+
+
+<script>
+document.getElementsByClassName("text-center mailer-section-icons space--xs")[0].innerHTML +=
+`
+<div class="container">
+  <div class="row section-cont__content-quick_facts"> 
+    <div class="col-sm-6 col-md-3">
+      <div style="height: 64px;" class="spacer"></div>
+      <div class="text-block blue-lg-icon"> 
+        <img style="height: 64px;" src="https://www.headspace.com/static/images/logo.svg"></img>
+        <div>
+          <h4 class="section-cont__content-quick_facts_headspace" id="headspace">100</h4>
+          <p>Active Headspace Licenses</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`
+
+const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRrXxL6br0e_W_9248wg5UWABWZo2UXTHxaSKl_gMsQ-Vjfd2q2iLKCmTIonU5H4X7quowZAqzDxwAb/pub?gid=499547162&single=true&output=csv"
+
+fetch(url)
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("headspace").innerText = data.split(',')[1];
+});
+
+</script>
+
+<!-- document.querySelector("h1.ce-element.ce-element--type-text").innerHTML = 
+`
+<img src="https://res.cloudinary.com/mpc-cloud/image/upload/v1586197809/MIT%20Mindfulness/M_L_BrandonGrotesque_Blue_r13gea.png" />
+` -->
+<!-- 
+document.getElementsByClassName("col-md-1 col-sm-2 hidden-xs")[0].insertAdjacentHTML('afterend', `
+<div class="col-md-1 col-sm-2 hidden-xs">
+<img src="https://res.cloudinary.com/mpc-cloud/image/upload/v1586197809/MIT%20Mindfulness/M_L_BrandonGrotesque_Icon_Blue_kigocw.png" />
+</div>
+`) -->
+
+<div class="col-md-1 col-sm-2 hidden-xs">
+  <img src="https://res.cloudinary.com/mpc-cloud/image/upload/v1586197809/MIT%20Mindfulness/M_L_BrandonGrotesque_Icon_Blue_kigocw.png" />
+</div>
